@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import topLeftImg from '../../../public/top-left.png';
 
-export default function TopLeftImage() {
+export function TopLeftImage() {
   return (
     <div className='absolute left-0 top-0 z-10 opacity-80 mix-blend-color-dodge'>
       <Image

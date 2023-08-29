@@ -1,4 +1,5 @@
 import {
+  HiArrowRight,
   HiChatBubbleBottomCenterText,
   HiEnvelope,
   HiHome,
@@ -14,4 +15,5 @@ export const Icons = {
   rectangleGroup: HiRectangleGroup,
   chat: HiChatBubbleBottomCenterText,
   envelope: HiEnvelope,
+  rightArrow: HiArrowRight,
 };

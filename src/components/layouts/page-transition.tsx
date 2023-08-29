@@ -3,23 +3,10 @@
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
 
+import { transitionVariants } from '@/lib/animationVariants';
+
 type PageTransitionProps = {
   children: React.ReactNode;
-};
-
-const transitionVariants = {
-  initial: {
-    x: '100%',
-    width: '100%',
-  },
-  animate: {
-    x: '0%',
-    width: '0%',
-  },
-  exit: {
-    x: ['0%', '100%'],
-    width: ['0%', '100%'],
-  },
 };
 
 export function PageTransition({ children }: PageTransitionProps) {

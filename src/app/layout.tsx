@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 
 import { fontSans } from '@/lib/fonts';
 import { cn } from '@/lib/utils';
+import TopLeftImage from '@/components/layouts/top-left-image';
 
 export const metadata: Metadata = {
   title: {
@@ -15,10 +16,19 @@ export const metadata: Metadata = {
   description: siteConfig.description,
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+type RootLayoutProps = {
+  children: React.ReactNode;
+};
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang='en'>
-      <body className={cn('min-h-screen font-sans antialiased', fontSans.variable)}>{children}</body>
+      <body className={cn('font-sans antialiased', fontSans.variable)}>
+        <div className='h-screen bg-site bg-cover bg-no-repeat'>
+          <TopLeftImage />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }

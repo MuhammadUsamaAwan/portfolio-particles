@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '@/lib/animationVariants';
 
-export default function HeroTitle() {
+export function HeroTitle() {
   return (
     <motion.h1
       variants={fadeIn('down', 0.2)}

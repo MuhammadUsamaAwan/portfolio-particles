@@ -1,7 +1,8 @@
-import Avatar from '@/components/avatar';
-import CTA from '@/components/cta';
-import HeroSubtitle from '@/components/hero-subtitle';
-import HeroTitle from '@/components/hero-title';
+import { Avatar } from '@/components/avatar';
+import { CTA } from '@/components/cta';
+import { HeroSubtitle } from '@/components/hero-subtitle';
+import { HeroTitle } from '@/components/hero-title';
+import { Particles } from '@/components/particles';
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       <div className='absolute bottom-0 right-0 h-full w-[1200px]'>
         <div className='absolute h-full w-full bg-none mix-blend-color-dodge xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat'></div>
 
-        <div>particles</div>
+        <Particles />
         <Avatar />
       </div>
     </div>

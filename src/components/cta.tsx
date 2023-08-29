@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '@/lib/animationVariants';
 import { Icons } from '@/components/icons';
 
-export default function CTA() {
+export function CTA() {
   return (
     <motion.div
       variants={fadeIn('down', 0.4)}

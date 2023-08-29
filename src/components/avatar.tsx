@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '@/lib/animationVariants';
 
-export default function Avatar() {
+export function Avatar() {
   return (
     <motion.div
       variants={fadeIn('up', 0.5)}

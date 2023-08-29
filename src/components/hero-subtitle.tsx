@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '@/lib/animationVariants';
 
-export default function HeroSubtitle() {
+export function HeroSubtitle() {
   return (
     <motion.p
       variants={fadeIn('down', 0.3)}
